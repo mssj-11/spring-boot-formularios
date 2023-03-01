@@ -21,7 +21,7 @@ public class FormController {
 	public String procesar(Model model) {
 		
 		
-		return "form";
+		return "resultado";
 	}
 	
 
