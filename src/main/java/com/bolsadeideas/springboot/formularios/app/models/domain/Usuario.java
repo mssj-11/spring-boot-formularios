@@ -1,11 +1,17 @@
 package com.bolsadeideas.springboot.formularios.app.models.domain;
 
+import jakarta.validation.constraints.NotEmpty;
+
 //	Clase Model del Formulario "Usuario"
 public class Usuario {
 	
+	//	Validando
+	@NotEmpty	//	Este campo es requerido
 	//	Mismos parametros del formulario
 	private String username;
+	@NotEmpty
 	private String password;
+	@NotEmpty
 	private String email;
 	
 	
@@ -31,7 +37,6 @@ public class Usuario {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
 	
 	
 	
